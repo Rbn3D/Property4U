@@ -25,7 +25,6 @@ namespace IdentitySample.Controllers
     using System.Text;
     using System.Net.Http.Headers;
 
-    [RequireHttps]
     [HandleError]
     public class ControlDeskController : Controller
     {

@@ -22,7 +22,6 @@ namespace IdentitySample.Controllers
     using System.Data.Entity;
     using PagedList;
 
-    [RequireHttps]
     [HandleError]
     public class FrontEndController : Controller
     {
