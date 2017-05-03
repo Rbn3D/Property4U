@@ -12,7 +12,7 @@
         try
         {
             //Settings = Property4U.Core.ConfigSys.GetSysInfo()/*.Result*/;
-            Settings = Property4U.Core.ConfigSys.Settings;
+            Settings = Property4U.Core.ConfigSys.Settings?? new Property4U.Models.Configuration();
         }
         catch (Exception)
         {
@@ -71,7 +71,6 @@
     </div>
         <!--End Page Header -->
     </div>*@
-    @if (@Model.FeaturePropertyPhoto != null && @Model.FeaturePropertyPhoto.Count() != 0)
     {
     <section id="slider" class="@Settings.ThemeColor">
         <!--slider-->

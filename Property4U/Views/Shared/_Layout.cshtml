@@ -6,7 +6,7 @@
     {
         try {
             //Settings = Property4U.Core.ConfigSys.GetSysInfo()/*.Result*/;
-            Settings = Property4U.Core.ConfigSys.Settings;
+            Settings = Property4U.Core.ConfigSys.Settings ?? new Property4U.Models.Configuration();
             Tasks.Add(Property4U.Core.TaskInfo.Info);
         }
         catch (Exception) {

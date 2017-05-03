@@ -9,7 +9,7 @@
     {
         try {
             //Settings = Property4U.Core.ConfigSys.GetSysInfo()/*.Result*/;
-            Settings = Property4U.Core.ConfigSys.Settings;
+            Settings = Property4U.Core.ConfigSys.Settings ?? new Property4U.Models.Configuration();
             TopAgents = Property4U.Core.HeaderFooterContent.TopAgentsVM;
             MenuPropertyTypes = Property4U.Core.HeaderFooterContent.MenuPropertyTypesVM;
             MenuPropertyTypesWithCount = Property4U.Core.HeaderFooterContent.MenuPropertyTypesWithCountVM;
@@ -296,7 +296,7 @@
                     <div class="row">
                         <div class="col-sm-2">
                             <div class="companyinfo">
-                                <h2><span>@Settings.CompanyName.Substring(0, 1)</span>roperty4U</h2>
+                                <h2><span>@Settings.CompanyName?.Substring(0, 1)</span>roperty4U</h2>
                                 <p>@Settings.CompanyDescription</p>
                             </div>
                         </div>

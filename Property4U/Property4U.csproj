@@ -294,11 +294,15 @@
     <Compile Include="Core\TimeZones.cs" />
     <Compile Include="Core\TimeZoneHelper.cs" />
     <Compile Include="Core\HeaderFooterContent.cs" />
-    <Compile Include="DAL\Property4UContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Hubs\ChatHub.cs" />
+    <Compile Include="Migrations\201705021844339_initial.cs" />
+    <Compile Include="Migrations\201705021844339_initial.Designer.cs">
+      <DependentUpon>201705021844339_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Ad.cs" />
     <Compile Include="Models\Address.cs" />
@@ -670,6 +674,7 @@
     <Folder Include="Content\Uploads\Orders\" />
     <Folder Include="Content\Uploads\SubTypes\" />
     <Folder Include="Content\Uploads\Types\" />
+    <Folder Include="DAL\" />
     <Folder Include="Views\Error\" />
   </ItemGroup>
   <ItemGroup>
@@ -677,6 +682,11 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201705021844339_initial.resx">
+      <DependentUpon>201705021844339_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
